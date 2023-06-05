@@ -1,0 +1,107 @@
+#subscribecont
+{
+	position: relative;
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto 5px auto;
+
+	min-height: 50px;
+	height: auto !important;
+	height: 50px;
+}
+
+	#subscribecont .smallicon
+	{
+		position: absolute;
+		top: 10px;
+		left: 18px;
+		color: #e74c3c;
+		z-index: 100;
+		font-size: 20px;
+	}
+	
+	#subscribecont .sb-search-input
+	{
+		position: relative;
+		top: 0;
+		right: 0;
+		border: 0;
+		outline: none;
+		background: #EEE;
+		width: 95%;
+		height: 40px;
+		z-index: 2;
+		padding: 0 65px 0 40px;
+		font-family: "Dosis";
+		font-size: inherit;
+		font-style: normal;
+		margin: 10px auto 10px 10px;
+		color: #e74c3c;
+		
+		-webkit-appearance: none;
+		
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+	}
+
+		#subscribecont  input#formbutton
+	{
+		/**position: absolute; **/
+		width: 100%;
+		max-width: 120px;
+		height: 35px;
+		top: 0; right: 0;
+		outline: none;
+		text-align: center;
+		cursor: pointer;
+		z-index: 2;
+		background: #e74c3c;
+		color: #FFF;
+		/** modifica  **/ 
+		margin: auto auto 10px 10px;
+		
+		-webkit-transition: all 0s ease-out 0.1s;
+		-moz-transition: all 0s ease-out 0.1s;
+		-o-transition: all 0s ease-out 0.1s;
+		transition: all 0s ease-out 0.1s;
+	}
+		
+		#subscribecont  button#formbutton span
+		{
+			font-size: 19px;
+		}
+		
+	#subscribecont  label.error,
+	#subscribecont #sentmessage
+	{
+		float: left;
+		width: 100%;
+		padding: 10px 65px 10px 0;
+		color: #e74c3c;
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 14px;
+		letter-spacing: 0.4px;
+		text-align: left;
+	}
+	
+		#subscribecont #sentmessage
+		{
+			display: none;
+			color: #2ecc71;
+		}
+#subscribecont  #register-form{
+	text-align: left;
+	border: solid #ccc 1px;
+}
+
+#subscribecont #nombre #email{
+	color: #e74c3c;
+	font-family: "Dosis";
+}
+#news-titulo{
+	text-align: justify;
+	width: 100%;
+	max-width: 800px;
+}

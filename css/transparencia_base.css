@@ -1,0 +1,33 @@
+.Estilo1 {
+	font-size: 15px;
+	color: #002680;
+	font-weight: bold;
+}
+
+.fondo_pagina {
+	background-color: #ffffff !important;
+    padding: 10px;
+	border-radius: 0 0 4px 4px;
+    clear: both;
+}
+.TextoMenu
+{	color: #002680;
+	font-size: 14px;
+	text-align: rigth;
+	font-weight: bold;
+}
+.TextoSubmenu
+{	font-size: 13px;
+	text-align: rigth;
+	font-weight: bold;
+}
+.Texto
+{	font-size: 13px;
+	text-align: rigth;
+}
+.TextoDoc
+{
+	font-size: 13px;
+	text-align: rigth;
+}
+.tags:before{	font-family: 'FontAwesome';	content: "\F02C"; 	color: white;	margin-right: 10px;	font-size: 12px;}.fav:before{	font-family: 'FontAwesome';	content: "\F097"; 	color: white;	margin-right: 10px;	font-size: 12px;}

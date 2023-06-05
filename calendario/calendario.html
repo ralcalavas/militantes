@@ -1,0 +1,22 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link href="lib/css/bootstrap-datepicker3.min.css" rel="stylesheet">  
+</head>
+<body>
+	<input type='text'  class="fecha"/>
+</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="lib/js/bootstrap-datepicker.min.js"></script>
+   <script src="lib/js/bootstrap-datepicker.es.min.js"></script>
+   <script>
+   $(".fecha").datepicker({
+        format:  'dd/mm/yyyy',
+        language: "es",
+        orientation: "auto",
+        todayHighlight: true,
+	    clearBtn: true
+	});
+   </script>
+</html>

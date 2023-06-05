@@ -1,0 +1,923 @@
+/* ==================================================
+   CSS Imports
+================================================== */
+
+@import url("reset.css");
+@import url("gridsystem.css");
+@import url("menu.css");
+@import url("newsletter.css");
+@import url("owlcarousel.css");
+
+/* ==================================================
+   Icon Fonts
+================================================== */
+
+@import url("fonts/fontawesome/font-awesome.css");
+
+/* ==================================================
+   Global Styles Modificado Nov 15
+================================================== */
+
+*, *:after, *:before
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html
+{
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body
+{
+	/**font-family: "Alegreya Sans", Arial, Verdana, Helvetica, sans-serif;**/
+	font-size: 17px;
+	line-height: 28px;
+	/**color: #444;
+	color: rgba(0,0,0,0.7);
+	**/
+	color: #000;	
+	background: #FFF;	
+	text-rendering: optimizeLegibility;
+	vertical-align: baseline;
+}
+
+::selection
+{
+	/*background: #e74c3c;*/
+	background: #61b832;
+	color: #FFF;
+}
+
+::-moz-selection
+{
+	/*background: #e74c3c;*/
+	background: #61b832;
+	color: #FFF;
+}
+
+a
+{
+	/**color: #61b832;**/
+	text-decoration: none;
+	color: green;
+}
+	a:hover
+	{
+		/**color: #333;**/
+		color: blue;
+	}
+/* ==================================================
+   Modificaciones Nov 15 y Dic 15
+================================================== */
+h6{
+	color: white;
+	font-weight: 400;
+	font-family: 'Dosis';
+	}
+p{
+	text-align: justify;
+
+}
+#caja_responsive{
+	border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 1px solid #5d5a61;
+margin-bottom: 20px;
+}
+#a_ads{
+	font-size: 12px;
+}
+time{
+	margin: auto auto auto 15px;
+	font-size: 10px;
+	color: green;
+}
+.destaca{
+	color: #61b832;
+}
+/*Modif 15 dic 15*/
+.titulo{
+	margin: autos auto 20px auto;
+    width: 100%;
+    max-width: 1140px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #000;
+    /*letter-spacing: 1.5px;*/
+    text-transform: uppercase;
+    font-family: "Dosis";
+}
+.titulo1{
+	margin: 20px auto 20px auto;
+}
+.destaca3{
+	color: #e74c3c;
+	font-size: normal;
+}
+.fb_iframe_widget{
+	top: -8px;
+}
+#form-demo {
+	text-align: left;
+    font-size: 17px;
+    line-height: 1.5em;
+    color: #000;
+    font-family: 'Dosis';
+	border: solid #e74c3c 1px;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	display: block;
+	margin: 10px auto 10px 0px;
+	max-width: 500px;
+}
+
+
+#form-demo1 {
+	text-align: left;
+    font-size: 17px;
+    line-height: 1.5em;
+    color: #000;
+    font-family: 'Dosis';
+	border: solid #e74c3c 1px;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	display: block;
+	margin: 10px auto 10px 0px;
+	max-width: 400px;	
+}
+#form-demo input {
+	font-size: 17px;
+	color: #e74c3c;
+	margin: 5px auto 5px 10px;
+		border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	height: 30px;
+	min-width: 80%;
+	
+}
+#form-demo1 input {
+	font-size: 17px;
+	color: #e74c3c;
+	margin: 5px auto 5px 10px;
+		border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	height: 30px;
+	min-width: 90%;
+	
+}
+#form-demo button{
+	margin: 10px auto 10px 10px;
+}
+#form-demo1 button{
+	margin: 10px auto 10px 10px;
+}
+#resp-correo{
+text-align: left;
+font-family: 'Dosis';
+border: solid #e74c3c 1px;
+color: #e74c3c;
+font-size: 12px;
+	border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+margin: auto auto 20px auto;
+}
+.logo-ic{
+	background: url("../images/logo-ic.jpg") no-repeat bottom center;
+}
+
+/* ==================================================
+   Images
+================================================== */
+
+img
+{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+}
+
+/* ==================================================
+   Separator Arrows
+================================================== */
+
+.arrow-separator
+{
+	position: relative;
+	/*Modif 20-12-15*/
+	border-top: solid #e74c3c 5px;
+	max-width: 1140px;
+	margin: auto;
+}
+
+	.arrow-separator:after
+	{
+		top: 100%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-width: 18px;
+		left: 50%;
+		margin-left: -18px;
+		z-index: 0;
+	}
+	
+		.arrow-red:after
+	
+	{
+			border-color: #e74c3c rgba(231,76,60,0) rgba(231,76,60,0) rgba(231,76,60,0); /** Using RGB to remove dark line in Firefox **/
+		}
+/* ==================================================
+   Backgrounds
+================================================== */
+
+.bg1
+{
+	background: url("../images/bg-10.jpg") no-repeat bottom center;
+	background-size: cover;
+	max-height: 100px;
+	border: solid 1px #e74c3c;
+    }
+
+.bg2
+{
+	/*background: #EEE;*/
+}
+
+.bg3
+{
+	/*background: #FFF;*/
+	/*border-top: 5px solid #e74c3c;*/
+	background: #FFFFFF;
+	margin: 20px auto auto auto;
+}
+.bg4{
+	background: url("../images/compaq-c700.jpg") no-repeat bottom center;
+	background-size: cover;
+	border-bottom: 5px solid #61b832;
+}
+/* ==================================================
+   Layout Styles
+================================================== */
+
+.container
+{
+	width: 100%;
+	padding: 0 30px;
+	min-width: 280px;
+}
+
+	.container .bodycontainer
+	{
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1140px;
+	}
+	.uno
+	{
+	margin: 20px auto;
+}
+/* ==================================================
+   Sections
+================================================== */
+
+[data-sr]
+{
+	visibility: hidden;
+}
+
+.section
+{
+	padding: auto 0; /*padding: 80px 0;*/
+	text-align: center;
+}
+
+#headercont
+{
+	position: relative;
+	padding: 10px 0;
+	text-align: left;
+}
+
+	#headercont #logocont p
+	{
+		margin: 10px 0 0 0;
+	}
+
+		#headercont #logocont p a
+		{
+			font-size: 27px;
+			line-height: 27px;
+			font-weight: 400;
+			color: #000;
+			letter-spacing: 1.5px;
+			text-transform: uppercase;
+			font-family: "Dosis";
+		}
+		
+		#headercont #logocont p a:hover
+		{
+			color: #e74c3c;
+			/**background: url("../images/bg-10.jpg") no-repeat bottom center;**/
+		}
+		
+	#headercont #menucont
+	{
+		font-family: "Dosis";
+	}
+
+#middlecont
+{	/*padding: 100px 0;*/
+	padding: 70px 0;
+}
+
+	#middlecont h3
+	{
+		font-size: 50px;
+		line-height: 50px;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: #FFF;
+		font-family: "Dosis";
+		letter-spacing: 2px;
+		margin: 0 0 20px 0;
+	}
+
+/*modif */
+	#middlecont #clock
+	{
+		padding: 0;
+		width: 100%;
+		max-width: 700px;
+		margin: 0 auto;
+		background-color: #000;
+			border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 1px solid #fff;
+	}
+	
+		#middlecont #clock div
+		{
+			float: left;
+			width: 25%;
+			text-align: center;
+			font-size: 64px;
+			line-height: 64px;
+			font-weight: 600;
+			padding: 15px 0;
+			text-transform: uppercase;
+			color: #FFF;
+			font-family: "Noto Sans";
+			letter-spacing: -1px;
+		}
+		
+			#middlecont #clock div span
+			{
+				display: block;
+				color: #FFF;
+				color: rgba(255,255,255,0.6);
+				font-size: 16px;
+				line-height: 16px;
+				font-weight: 300;
+				margin: 10px 0 0 0;
+				font-family: "Alegreya Sans";
+				letter-spacing: 3px;
+			}
+			
+#newslettercont
+{
+	
+}
+
+	#newslettercont h3
+	{
+		font-size: 22px;
+		line-height: 22px;
+		font-weight: 500;
+		color: #444;
+		margin: 0 0 20px 0;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		font-family: "Dosis";
+	}
+	
+		#newslettercont h3 span
+		{
+			color: #e74c3c;
+		}
+	
+	#newslettercont p
+	{
+		margin: 0 0 30px 0;
+	}
+		
+#ourteamcont
+{
+	
+}
+
+	#ourteamcont h3
+	{
+		font-size: 22px;
+		line-height: 22px;
+		font-weight: 500;
+		color: #444;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		margin: 5px 0 10px 0;
+		font-family: "Dosis";
+	}
+	
+	#ourteamcont p
+	{
+		font-size: 17px;
+		line-height: 22px;
+	}
+
+	#ourteamcont .box
+	{
+		padding: 20px 0;
+	}
+
+	#ourteamcont .dwdgrid-4
+	{
+		text-align: right;
+	}
+	
+	#ourteamcont .dwdgrid-8 p:last-child
+	{
+		margin: 0;
+	}
+
+	#ourteamcont .withbg
+	{
+		/*background: url("../images/bg.png") repeat-y 33.33% 0;*/
+	}
+	
+	#ourteamcont .owl-customnav
+	{
+		margin: 0 0 20px 0;
+	}
+	
+		#ourteamcont .owl-customnav ul
+		{
+			float: right;
+		}
+	
+			#ourteamcont .owl-customnav ul li
+			{
+				float: left;
+			}
+			
+				#ourteamcont .owl-customnav ul li a
+				{
+					display: inline-block;
+					font-size: 21px;
+					line-height: 31px;
+					width: 100%;
+					text-align: center;
+					width: 28px;
+					background: #e74c3c;
+					color: #FFF;
+					cursor: pointer;
+					margin: 10px 0 0 5px;
+				}
+				
+					#ourteamcont .owl-customnav ul li a:hover
+					{
+						background: #c0392b;
+					}
+					
+	#ourteamcont .owl-carousel .item
+	{
+		position: relative;
+		text-align: center;
+	}
+	
+		#ourteamcont .owl-carousel .item p img
+		{
+			display: inline-block;
+			width: 100%;
+			max-width: 120px;
+			
+			-webkit-border-radius: 80px;
+			-moz-border-radius: 80px;
+			border-radius: 80px;
+			float: left;
+		}
+		
+		#ourteamcont .owl-carousel .item h3
+		{
+			font-size: 20px;
+			line-height: 20px;
+			font-weight: 500;
+			color: #444;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			margin: 10px 0;
+			font-family: "Dosis";
+			text-align: left;
+		}
+		
+		#ourteamcont .owl-carousel .item p
+		{
+			font-size: 17px;
+			line-height: 22px;
+			padding: 0;
+		}
+
+#servicescont
+{
+	
+}
+
+	#servicescont .row
+	{
+		padding: 0 0 40px 0;
+	}
+	
+	#servicescont .row:last-child
+	{
+		padding: 0;
+	}
+	
+		#servicescont span
+		{		
+			color: #e74c3c;
+			/**font-size: 36px;
+				margin: auto; **/
+		}
+	
+		#servicescont h3
+		{
+			font-size: 18px;
+			line-height: 18px;
+			font-weight: 500;
+			color: #e74c3c;
+			letter-spacing: 1px;
+			/*text-transform: uppercase;*/
+			margin: 8px auto 10px auto;
+			font-family: "Dosis";
+			text-align: justify;
+		}
+					
+		#servicescont p
+		{
+			font-size: 17px;
+			line-height: 22px;
+			color: #000;
+			font-family: 'Dosis';	
+		}
+
+#testimonialcont
+{
+	text-align: left;
+}
+
+	#testimonialcont h3
+	{
+		font-size: 22px;
+		line-height: 22px;
+		font-weight: 500;
+		color: #444;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		margin: 5px 0 10px 0;
+		font-family: "Dosis";
+	}
+	
+	#testimonialcont p
+	{
+		font-size: 15px;
+		line-height: 22px;
+	}
+	
+		#testimonialcont .item p
+		{
+			font-size: 17px;
+			line-height: 28px;
+			font-style: italic;
+		}
+
+	#testimonialcont .box
+	{
+		padding: 20px 0;
+	}
+
+	#testimonialcont .dwdgrid-4
+	{
+		text-align: right;
+	}
+	
+	#testimonialcont .dwdgrid-8 p:last-child
+	{
+		margin: 0;
+		color: #000;
+		color: rgba(0,0,0,0.4);
+	}
+
+	#testimonialcont .withbg
+	{
+		/*background: url("../images/bg.png") repeat-y 33.33% 0;*/
+	}
+	
+	#testimonialcont .owl-customnav
+	{
+		margin: 0 0 20px 0;
+	}
+	
+		#testimonialcont .owl-customnav ul
+		{
+			float: right;
+		}
+	
+			#testimonialcont .owl-customnav ul li
+			{
+				float: left;
+			}
+			
+				#testimonialcont .owl-customnav ul li a
+				{
+					display: inline-block;
+					font-size: 21px;
+					line-height: 31px;
+					width: 100%;
+					text-align: center;
+					width: 28px;
+					background: #e74c3c;
+					color: #FFF;
+					cursor: pointer;
+					margin: 10px 0 0 5px;
+				}
+				
+					#testimonialcont .owl-customnav ul li a:hover
+					{
+						background: #c0392b;
+					}
+					
+#footercont
+{
+	padding: 3px 0;
+	color: #000000;
+	font-size: 90%;
+	font-style: italic;
+	/*color: rgba(0, 0, 0, 0.5);*/
+	text-align: left;
+}
+
+	#footercont .column-10
+	{
+		text-align: right;
+	}
+
+	#footercont p
+	{
+		margin: 0;
+	}
+
+	#footercont a
+	{
+		color: rgba(0,0,0,0.4);
+	}
+	
+	#footercont a:hover
+	{
+		color: #e74c3c;
+	}
+	
+		#footercont a.scrolltop
+		{
+			font-size: 38px;
+		}
+	
+		#footercont #socialmedia ul
+		{
+			margin: 0 0 20px 0;
+		}
+
+		#footercont #socialmedia ul li
+		{
+			display: inline-block;
+			list-style-type: none;
+			margin: 0 12px 0 0;
+			padding: 0;
+		}
+
+			#footercont #socialmedia ul li a
+			{
+				font-size: 27px;
+			}
+
+/* ==================================================
+   Media Queries - Small Desktop
+================================================== */
+
+@media only screen and (max-width: 1200px)
+{
+	
+
+}
+
+/* ==================================================
+   Media Queries - Tablet - Landscape
+================================================== */
+
+@media only screen and (max-width: 1048px)
+{
+	
+	
+}
+
+/* ==================================================
+   Media Queries - Mobile - Landscape
+================================================== */
+
+@media only screen and (max-width: 960px)
+{
+	
+
+
+	#middlecont
+	{
+		padding: 80px 0;
+	}
+		
+		#middlecont #clock
+		{
+			padding: 0;
+		}
+		
+			#middlecont #clock div
+			{
+				font-size: 46px;
+				line-height: 46px;
+				padding: 20px 0;
+			}
+			
+	#servicescont
+	{
+		/**padding: 40px 0 30px 0;**/
+
+	}
+	
+		#servicescont .row
+		{
+			padding: 0;
+		}
+		
+		#servicescont .row .box
+		{
+			/**padding: 0 0 30px 0;**/
+			text-align: center;
+		}
+
+			#servicescont h3 span
+			{
+				display: inline-block;
+				width: 100%;
+				max-width: 100%;
+				padding: 0;
+				font-size: 30px;
+				margin: 0 0 10px 0;
+				text-align: center;
+			}
+	
+	#ourteamcont .dwdgrid-4
+	{
+		text-align: center;
+	}
+
+		#ourteamcont .withbg
+		{
+			background-image: none;
+		}
+		
+		#ourteamcont .box
+		{
+			padding: 0 0 20px 0;
+		}
+		
+		#ourteamcont .owl-customnav
+		{
+			margin: 0 0 20px 0;
+		}
+		
+			#ourteamcont .owl-customnav ul
+			{
+				float: none;
+				display: inline-block;
+			}
+	
+				#ourteamcont .owl-customnav ul li a
+				{
+					display: inline-block;
+					margin: 10px 5px 0 5px;
+				}
+
+	#testimonialcont .dwdgrid-4
+	{
+		text-align: center;
+	}
+
+		#testimonialcont .withbg
+		{
+			background-image: none;
+		}
+		
+		#testimonialcont .box
+		{
+			padding: 0 0 20px 0;
+		}
+		
+		#testimonialcont p
+		{
+			text-align: center;
+		}
+		
+		#testimonialcont .owl-customnav
+		{
+			margin: 0 0 20px 0;
+		}
+		
+			#testimonialcont .owl-customnav ul
+			{
+				float: none;
+				display: inline-block;
+			}
+	
+				#testimonialcont .owl-customnav ul li a
+				{
+					display: inline-block;
+					margin: 10px 5px 0 5px;
+				}
+
+	#footercont
+	{
+		text-align: center;
+	}
+	
+		#footercont .column-10
+		{
+			text-align: center;
+			margin-top: 20px;
+		}
+	
+		#footercont a.scrolltop
+		{
+			display: block;
+			margin: 0;
+		}
+		
+		#footercont #socialmedia ul li
+		{
+			margin: 0 10px 0 0;
+		}
+	
+}
+
+/* ==================================================
+   Media Queries - Mobile - Small Landscape
+================================================== */
+
+@media only screen and (max-width: 768px)
+{
+
+	#middlecont #clock div
+	{
+		width: 50%;
+	}
+	
+}
+
+/* ==================================================
+   Media Queries - Mobile - Portrait
+================================================== */
+
+@media only screen and (max-width: 480px)
+{
+
+}
+
+/* ==================================================
+   para log in
+================================================== */
